@@ -1,0 +1,119 @@
+/* Additions for CRUD */
+
+/* CRUD Table Styling */
+.table-container {
+    margin: 20px 0;
+    overflow-x: auto;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+}
+
+table th {
+    background: #2c3e50;
+    color: white;
+    font-weight: bold;
+    padding: 12px;
+    text-transform: uppercase;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+table td {
+    padding: 12px;
+    border-bottom: 1px solid #eee;
+    font-size: 14px;
+}
+
+.id-column {
+    width: 80px;
+    text-align: center;
+}
+
+.name-column {
+    text-align: left;
+}
+
+.actions-column {
+    width: 200px;
+    text-align: center;
+}
+
+tr:hover {
+    background-color: #f5f6fa;
+}
+
+/* Buttons for CRUD Actions */
+.crud-button {
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 14px;
+    transition: all 0.3s ease;
+    margin: 0 4px;
+}
+
+.crud-button.add {
+    background-color: #3498db;
+    color: white;
+}
+
+.crud-button.edit {
+    background-color: #2ecc71;
+    color: white;
+}
+
+.crud-button.delete {
+    background-color: #e74c3c;
+    color: white;
+}
+
+.crud-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.crud-button:active {
+    transform: translateY(0);
+}
+
+/* Form styling */
+#crud-form {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#name-input {
+    flex: 1;
+    padding: 8px 12px;
+    border: 2px solid #eee;
+    border-radius: 4px;
+    font-size: 14px;
+    transition: border-color 0.3s ease;
+}
+
+#name-input:focus {
+    border-color: #3498db;
+    outline: none;
+}
+
+/* Logout button specific style */
+#logout {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 14px;
+    float: right;
+}

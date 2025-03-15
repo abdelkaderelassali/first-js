@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CRUD</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/crud.css">
+</head>
+<body>
+  <div class="wrapper">
+    <h1>Manage Data</h1>
+    <form id="crud-form">
+      <input type="text" id="name-input" placeholder="Enter name" required>
+      <button type="submit" class="crud-button add">Add</button>
+    </form>
+    <div class="table-container">
+      <table id="data-table">
+        <thead>
+          <tr>
+            <th class="id-column">ID</th>
+            <th class="name-column">Name</th>
+            <th class="actions-column">Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Dynamic rows will be added here -->
+        </tbody>
+      </table>
+    </div>
+    <button id="logout" class="crud-button delete">Logout</button>
+  </div>
+  <script src="js/crud.js" defer></script>
+  <script src="js/auth.js" defer></script>
+</body>
+</html>
